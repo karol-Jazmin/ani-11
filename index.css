@@ -1,0 +1,232 @@
+header {
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.logo {
+  width: 100px;
+  transition: transform 0.4s;
+}
+.logo:hover {
+  transform: scale(1.2);
+}
+.titulo {
+  text-align: center;
+  font-size: 48px;
+  color: rgb(74, 115, 153);
+  transition: font-size 0.4s, color 0.4s;
+}
+
+.titulo:hover {
+  text-align: center;
+  font-size: 56px;
+  color: rgb(36, 96, 151);
+}
+
+.menu {
+  width: 200px;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: max-height 0.5s ease, box-shadow 0.3s ease;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.menu:hover .submenu {
+  max-height: 100px;
+}
+
+.submenu a {
+    font-family:Arial, Helvetica, sans-serif ;
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+  background-color: #f2f2ff;
+}
+
+button {
+  all: unset;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #025a94;
+  color: white;
+  height: 50px;
+  width: 250px;
+  box-shadow: 0 0 5px rgba(148, 225, 255, 0.4);
+  transition: box-shadow 0.4 ease;
+}
+button:hover {
+  box-shadow: 0 10px 20px rgba(148, 225, 255, 0.4);
+}
+h2 {
+  color: rgb(24, 23, 100);
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  color: rgb(31, 31, 31);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tarjeta1 {
+  width: 350px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.4 ease;
+}
+.tarjeta1:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.boton1 {
+  background-color: #025a94;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.boton1:hover {
+  background-color: #021553;
+  transform: scale(1.1);
+}
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+  gap: 20px;
+}
+.todo{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-items: center;
+}
+.imagen {
+  width: 300px;
+  height: 200px;
+  transition: transform 0.4s;
+}
+.imagen:hover {
+  transform: scale(1.2);
+}
+.moviima {
+  display: flex;
+  justify-content: center;
+}
+.bien {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(197, 229, 255);
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bien p {
+  position: relative;
+  z-index: 1;
+  margin-left:20px ;
+}
+
+.cuadro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(36, 96, 151);
+  color: white;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cuadro:hover{
+    transform: translate(50%);
+}
+.produc{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover{
+    transform: translate(-10px);
+    box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
+}
+
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta h2{
+    margin: 15px;
+    font-size: 22px;
+    color: #2c3e50;
+}
+
+.tarjeta p{
+    margin: 0 15px 20px;
+    color: #555;
+    font-size: 16px;
+}
+
+.boton{
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 0 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.boton:hover{
+    background: #2ecc71;
+    transform: scale(1.05);
+}
+.imaproduc{
+    height: 200px;
+    width: 300px;
+}
