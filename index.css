@@ -128,6 +128,12 @@ p {
 .imagen:hover {
   transform: scale(1.2);
 }
+.cuamovi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 .moviima {
   display: flex;
   justify-content: center;
@@ -135,10 +141,11 @@ p {
 .bien {
   position: relative;
   width: 100%;
-  height: 50px;
-  background-color: rgb(197, 229, 255);
+  height: 350px;
+  background-color: rgb(227, 244, 253);
   display: flex;
   align-items: center;
+  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -146,6 +153,15 @@ p {
   position: relative;
   z-index: 1;
   margin-left:20px ;
+  font-size: 20px;
+  color: #021553;
+}
+.bien img {
+  position: relative;
+  z-index: 1;
+  margin-left:20px ;
+  width: 250px;
+  height: 250px;
 }
 
 .cuadro {
@@ -154,7 +170,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(36, 96, 151);
+  background-color: rgb(227, 244, 253);
   color: white;
   z-index: 2;
   display: flex;
@@ -163,7 +179,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 .cuadro:hover{
-    transform: translate(50%);
+    transform: translate(35%);
 }
 .produc{
     font-family: Arial, Helvetica, sans-serif;
